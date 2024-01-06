@@ -8,7 +8,7 @@
 #define SRC_DIR "src"
 #define OUTPUT_DIR "output/"
 #define PROGRAM_NAME "http-server"
-#define C_FILES "http-server.c Networking/Server.c"
+#define C_FILES "http-server.c Networking/Server.c Networking/HttpRequest.c DataStructures/Common/Node.c DataStructures/Dictionary/Entry.c DataStructures/Dictionary/Dictionary.c DataStructures/Lists/LinkedList.c DataStructures/Lists/Queue.c DataStructures/Trees/BinarySearchTree.c"
 #define INCLUDE "" 
 #define LIB "-INetworking/Server.h"
 #define FLAGS ""

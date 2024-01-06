@@ -4,6 +4,9 @@
 #include <stdlib.h>
 #include "Networking/Server.h"
 
+
+
+
 void launch(struct Server *server) {
     #define buffer_size 30000
     char buffer[buffer_size];
@@ -30,12 +33,13 @@ void launch(struct Server *server) {
                                 (socklen_t *)&address_length);
 
         if(new_socket > 0) {
-            printf("===== CONNECTION SUCCESS =====\n");
+            printf("\n\n===== CONNECTION SUCCESS =====\n");
         }
         //test for connection success
         read(new_socket , buffer , buffer_size);
     
-        //printf("%s" , buffer);
+
+        printf("%s" , buffer);
 
         write(new_socket, content , strlen(content));
         close(new_socket);

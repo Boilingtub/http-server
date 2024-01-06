@@ -1,7 +1,6 @@
 #include "Server.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <sys/socket.h>
 
 
 struct Server server_constructor(int domain , int service , int protocol , 
